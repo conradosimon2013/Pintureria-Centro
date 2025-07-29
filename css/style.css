@@ -1,0 +1,40 @@
+:root {
+  --principal: #d4c366;
+  --principal-hover: #c0ae33;
+  --barra-secundaria: #7d7a65;
+  --texto: #333333;
+  --blanco: #ffffff;
+}
+
+/* NAVBAR SECUNDARIA */
+.navbar[style*="#7d7a65"] {
+  background-color: var(--barra-secundaria) !important;
+  border-top: 3px solid var(--principal);
+}
+
+/* Links secundarios */
+.navbar[style*="#7d7a65"] .nav-link {
+  color: var(--blanco) !important;
+  font-weight: 500;
+}
+.navbar[style*="#7d7a65"] .nav-link:hover {
+  color: var(--principal) !important;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  border-top: 2px solid var(--principal);
+}
+.dropdown-item {
+  color: var(--texto);
+}
+.dropdown-item:hover {
+  background-color: var(--principal);
+  color: var(--blanco);
+}
+
+/* Dropdown abierto por hover */
+#menu-categorias.show {
+  display: block;
+  margin-top: 0.3rem;
+}
